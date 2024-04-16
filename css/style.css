@@ -1,0 +1,137 @@
+body {
+	background-color: #d2f6ea;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	margin: 0;
+}
+
+/* Header styling */
+header a {
+	margin-left: auto;
+	display: block;
+	width: fit-content;
+	margin-right: auto;
+}
+header a img:last-child {
+	display: none;
+}
+header a:hover img:last-child {
+	display: inline;
+}
+header a:hover img:first-child {
+	display: none;
+}
+header a img {
+	height: 10rem;
+}
+
+/* Navbar styling */
+nav {
+	background-color: #495e57;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav li {
+	display: inline-flex;
+}
+
+nav ul li a {
+	color: #fff;
+	padding: 1.25rem;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+nav ul li > .active {
+	color: #f4ce15;
+	background-color: #242e2a;
+	text-shadow: 1px 1px #fff;
+}
+
+nav ul li a:hover {
+	background-color: #719184;
+	box-shadow: 0px 0px 20px #9d9d9d;
+	color: #242e2a;
+	text-shadow: 1px 1px #fff;
+}
+
+/* Main content styling */
+section {
+	display: flex;
+	margin: 1rem;
+}
+
+article {
+	flex: 1;
+}
+
+article h1 {
+	font-size: 3rem;
+}
+article p {
+	font-size: 2rem;
+}
+
+section:first-child {
+	background: url("../assets/banner.jpg") no-repeat scroll left center;
+	border-radius: 30px;
+	border: none;
+	width: 96%;
+	height: 100%;
+	background-size: cover;
+	padding: 1%;
+	color: white;
+	text-shadow: 1px 1px #000000;
+}
+
+section:first-child article p {
+	text-wrap: balance;
+}
+
+section:last-child article {
+	position: relative;
+	text-align: center;
+	box-shadow: 0px 0px 2rem #121212;
+	margin: 1rem;
+	border-radius: 1rem;
+	background: white;
+	padding: 1rem;
+}
+
+section:last-child article img {
+	height: 20rem;
+	width: 100%;
+	border-radius: 1rem;
+}
+
+section:last-child article:hover {
+	transition: all 0.2s ease-out;
+	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	top: -4px;
+	border: 1px solid #cccccc;
+	background-color: white;
+}
+/* Footer Styling */
+
+footer {
+	display: flex;
+	padding: 1rem;
+	background-color: #88afa2;
+}
+
+footer div {
+	flex: 1;
+	align-self: center;
+	color: #495e57;
+}
+
+footer div img {
+	height: 10rem;
+}
+
+footer div p {
+	font-size: 1.5rem;
+}
